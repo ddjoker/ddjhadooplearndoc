@@ -8,7 +8,7 @@
 
 ## 启动之前的工作
 清理临时文件（如果有必要）
-```
+```bash
 rm -r hadoop-2.7.3/logs/*
 rm -r /data/hadoop/storage/tmp/*
 ```
