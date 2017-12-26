@@ -10,7 +10,7 @@ HOSTNAME=eagle-dong-test
 强制启用此配置
 
 ```
-hostname comex01-ct65
+hostname eagle-dong-test
 ```
 
 ## 修改主机映射
