@@ -16,7 +16,7 @@ vim hadoop-env.sh
 注：`etc/hadoop`前面不要加`/`，这个路径在`$HADOOP_HOME`下
 
 添加如下内容
-```
+```bash
 JAVA_HOME=/usr/lib/jvm/java-1.8.0
 export JAVA_HOME
 export CLASS_PATH=$JAVA_HOME/lib:$JAVA_HOME/jre/lib
@@ -35,7 +35,7 @@ cd etc/hadoop
 vim core-site.xml
 ```
 在`<configuration></configuration>`添加如下配置
-```
+```xml
     <property>
         <name>fs.defaultFS</name>
         <value>hdfs://eagle-dong-test:9000</value>
@@ -73,7 +73,7 @@ cd etc/hadoop
 vim hdfs-site.xml
 ```
 在`<configuration></configuration>`添加如下配置
-```
+```xml
  <property>
         <name>dfs.replication</name>
         <value>3</value>
@@ -99,11 +99,12 @@ vim mapred-site.xml
 cp mapred-site.xml.template mapred-site.xml
 ```
 在`<configuration></configuration>`添加如下配置
-```
+``` xml
     <property>
             <name>mapreduce.framework.name</name>
             <value>yarn</value>
     </property>
+    <!-- job server  需要另行启动job服务 -->
     <property>
             <name>mapreduce.jobhistory.address</name>
             <value>eagle-dong-test:10020</value>
@@ -121,7 +122,7 @@ cd etc/hadoop
 vim yarn-site.xml
 ```
 在`<configuration></configuration>`添加如下配置
-```
+```xml
     <property>
             <name>yarn.resourcemanager.hostname</name>
             <value>eagle-dong-test</value>
