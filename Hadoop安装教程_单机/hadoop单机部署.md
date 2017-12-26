@@ -44,11 +44,13 @@ vim core-site.xml
         <name>io.file.buffer.size</name>
         <value>131072</value>
     </property>
+    <!-- 配置hadoop 存储目录 -->
     <property>
         <name>hadoop.tmp.dir</name>
         <value>file:/data/hadoop/storage/tmp</value>
         <description>Abase for other temporary directories.</description>
     </property>
+    <!-- 配置用户代理-->
     <property>
         <name>hadoop.proxyuser.eagle.hosts</name>
         <value>*</value>
@@ -136,7 +138,7 @@ vim yarn-site.xml
 
 ```
 cd etc/hadoop
-vim yarn-site.xml
+vim slaves
 ```
 
 删除掉localhost
