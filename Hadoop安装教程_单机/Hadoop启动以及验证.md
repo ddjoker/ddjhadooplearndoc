@@ -71,4 +71,3 @@ cd sbin
 > ```
 > 这个错误是因为没有启动 [jobhistory server](./hadoop\ job\ history\ server.md) 启动即可
 >
->
