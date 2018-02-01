@@ -6,7 +6,9 @@
     `git config --global http.sslVerify false`
     设置完成后继续clone，就可以了。
 2. 设置代理
-    ```
-    git config --global http.proxy http://127.0.0.1:1080
-    git config --global https.proxy https://127.0.0.1:1080
+    ```bash
+      git config --global https.proxy http://127.0.0.1:1080
+      git config --global https.proxy https://127.0.0.1:1080
+      git config --global --unset http.proxy
+      git config --global --unset https.proxy
     ```
