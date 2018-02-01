@@ -65,7 +65,7 @@ vim core-site.xml
     </property-->
 ```
 
-1. `fs.defaultFS` :主要配置，配置hadoop启动端口号等信息，作为访问地址。
+1. `fs.defaultFS` :主要配置，配置hadoop启动端口号(默认端口为8020)等信息，作为访问地址。
 2. `hadoop.tmp.dir`:写入的临时目录。
 3. `hadoop.proxyuser.eagle.hosts`,`hadoop.proxyuser.eagle.groups`:代理用户的可以代理的地址和可以代理的组。`*`所有的代理用户和组都使用此用户`eagle`来操作`hdfs`
 
